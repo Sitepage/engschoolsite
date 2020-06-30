@@ -1,0 +1,707 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, :after, body {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: 600;
+    outline: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-top {
+    background: #43305E;
+}
+
+.header-top_panel {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-top_logo {
+    background: #37BD80;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    margin-left: 15px;
+}
+
+.header-top_logo p {
+    font-weight: 600;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.menu {
+    margin-right: 40px;
+}
+
+.header_phone {
+    margin-right: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.header_phone::before {
+    content: "\f095";
+    font-family: 'icomoon';
+    color: #37BD80;
+    position: absolute;
+    left: 0;
+}
+
+.header-content {
+    background: url(img/img1.jpg) no-repeat center center/cover;
+}
+
+.header-content_panel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-content_left {
+    margin-top: 140px;
+    margin-left: 65px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.header-content_text h3 {
+    font-weight: 600;
+    color: #37BD80;
+}
+
+.header-content_text h2 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #43305E;
+}
+
+.header-content_text h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #43305E;
+}
+
+.header-content_button p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #43305E;
+}
+
+.header-content_button {
+    margin-top: 35px;
+    margin-bottom: -3px;
+}
+
+.header-content_right {
+    margin-right: 22px;
+    margin-bottom: -3px;
+}
+
+.header_btn {
+    margin-top: 30px;
+}
+
+.default_btn {
+    cursor: pointer;
+    color: #FBFBFB;
+    background-color: #37BD80;
+    font-size: 16px;
+    font-weight: 700;
+    width: 155px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.advantages, .questions {
+    background: #fafafa;
+}
+
+.default_btn:hover {
+    background-color: #2e9e6c;
+}
+
+.advantages-block, .study-block, .questions-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages-block_item h4, .about-right h4, .study-block_item h4, .reviews-left h4, .reviews-left h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.advantages-title, .about-title, .study-title, .questions-title, .reviews-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-content, .about-content, .study-content, .questions-content, .footer-content {
+    padding: 50px 0;
+}
+
+.advantages-block, .about-block, .study-block {
+    margin-top: 50px;
+}
+
+.advantages-block_item {
+    max-width: 233px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 5px 15.36px 0.64px rgb(196, 238, 219);
+    padding: 15px 0;
+    margin: 15px;
+}
+
+.advantages-block_text, .about-right_text {
+    margin-top: 20px;
+}
+
+.advantages-title, .about-title, .study-title, .questions-title, .reviews-title {
+    padding-left: 130px;
+    position: relative;
+}
+
+.advantages-title::before, .about-title::before, .study-title::before, .questions-title::before, .reviews-title::before {
+    content: '';
+    width: 85px;
+    height: 10px;
+    background: #43305E;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.about, .reviews {
+    background: #F6f6f6;
+}
+
+.about-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-right_text {
+    margin-bottom: 30px;
+}
+
+.team {
+    max-width: 100%;
+}
+
+.about-right {
+    margin: 20px 30px 0;
+    max-width: 40%;
+}
+
+.study {
+    background: #f1f1f1;
+}
+
+.study-item_icon {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.study-item_icon img {
+    position: relative;
+    z-index: 1;
+}
+
+.study-item_icon::after {
+    content: '';
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: radial-gradient(white, #37BD80);
+    opacity: .7;
+    top: 0;
+    right: 15px;
+}
+
+.study-block_item {
+    text-align: center;
+    max-width: 165px;
+    width: 100%;
+}
+
+.questions-left {
+    margin-top: 10px;
+}
+
+.questions-block {
+    margin: 50px 40px 0 40px;
+}
+
+.accordeon div {
+    font-size: 15px;
+    line-height: 1.4;
+    width: 700px;
+    color: black;
+}
+
+.panel-heading {
+    margin-top: 20px;
+}
+
+.panel-heading a {
+    background: #EEEFF1;
+    color: black;
+    display: block;
+    padding: 10px 40px 10px 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.panel-heading a:hover {
+    color: #37BD80;
+}
+
+.panel-heading a::after {
+    content: "\f078";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 15px;
+    transition: 0.3s;
+}
+
+.panel-heading.in a::after {
+    transform: rotate(180deg);
+}
+
+.panel-heading.in a {
+    background: #C1E9D7;
+    color: black;
+}
+
+.panel-collapse {
+    display: none;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.reviews-left {
+    margin: 100px 30px 0;
+    max-width: 40%;
+}
+
+.reviews-block {
+    padding-top: 25px;
+}
+
+.reviews-right {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.reviews-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-right_item {
+    border: #C1E9D7 solid 6px;
+    padding: 35px 10px 10px;
+    position: relative;
+}
+
+.second {
+    margin-top: 45px;
+}
+
+.text {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.signature {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.reviews-content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.reviews-img {
+    position: absolute;
+    top: -40px;
+    left: 43%;
+}
+
+.reviews-left h4 {
+    color: #37BD80;
+    margin-bottom: 20px;
+}
+
+.reviews-right_item {
+    display: inline-block;
+}
+
+.slider_block {
+    position: relative;
+}
+
+.slick_btn {
+    position: absolute;
+    bottom: -10%;
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    font-size: 3em;
+    border: none;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+.slick-prev {
+    right: 17%;
+}
+
+.slick_btn::before {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #43305E;
+}
+
+.slick-next::before {
+    content: "\f178";
+}
+
+.slick-prev::before {
+    content: "\f177";
+}
+
+.slick-slide {
+    margin-top: 40px;
+}
+
+.footer {
+    background: #43305E;
+}
+
+.footer-block_map {
+    max-width: 580px;
+    width: 100%;
+}
+
+.footer-block_map iframe {
+    width: 100%;
+}
+
+ul.footer_list {
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.footer_list a {
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer_list li {
+    margin-top: 20px;
+}
+
+.footer_phone::before, .footer_mail::before, .footer_map::before {
+    content: '';
+    position: absolute;
+    font-family: 'icomoon';
+    left: 0;
+    color: #2e9e6c;
+}
+
+.footer_phone::before {
+    content: "\f095";
+}
+
+.footer_mail::before {
+    content: "\f0e0";
+}
+
+.footer_map::before {
+    content: "\f041";
+}
+
+.footer-content, .footer-block_communication {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-block_communication {
+    margin-left: 20px;
+}
+
+.footer-block_social {
+    font-size: 28px;
+    text-align: center;
+}
+
+.footer-block_social span {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #FBFBFB;
+    background-color: black;
+    padding-top: 10px;
+}
+
+form input {
+    display: block;
+    color: black;
+    background-color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 700;
+    width: 155px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    margin: 15px auto 0;
+}
+
+.form-text, .contact_text {
+    color: #FBFBFB;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-block_form {
+    max-width: 200px;
+    text-align: center;
+}
+
+.footer_btn {
+    margin-top: 15px;
+}
+
+.header-btn {
+    display: none;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+@media (max-width:1080px) {
+    .footer-block_form {
+        margin-top: 15px;
+    }
+    .footer-block_contact {
+        margin-top: 40px;
+    }
+    .footer_btn {
+        height: 35px;
+    }
+    form input {
+        height: 30px;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .advantages-block {
+        justify-content: center;
+    }
+    .questions-left {
+        display: none;
+    }
+    .questions-right {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:870px) {
+    .header-content_left {
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    .header-content_text h2 {
+        font-size: 23px;
+    }
+    .header-content_text h1 {
+        font-size: 29px;
+    }
+    .header-content_button p {
+        font-size: 18px;
+    }
+    .header-content_right {
+        margin-right: 0px;
+    }
+    .menu {
+        margin: 0px;
+    }
+    .menu li, .header_phone {
+        font-size: 12px;
+    }
+    .advantages-block, .study-block {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .advantages-block_item, .study-block_item {
+        margin: 25px 15px;
+    }
+    .about-block, .reviews-block {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .about-right, .reviews-left {
+        max-width: 85%;
+        margin: 25px 0;
+    }
+    .advantages-content, .about-content, .study-content, .questions-content, .footer-content {
+        padding: 20px 0;
+    }
+    .advantages-title, .about-title, .study-title, .questions-title, .reviews-title {
+        font-size: 17px;
+    }
+    .accordeon div {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .header-content_right {
+        display: none;
+    }
+    .header-content_left {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    .header-content_button {
+        margin: 20px 0;
+    }
+    .header-btn {
+        display: block;
+        color: #f6f6f6;
+        margin-right: 15px;
+    }
+    .header_phone {
+        display: none;
+    }
+    .header-top .container {
+        padding: 0;
+    }
+    .menu ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 0;
+        margin: 0;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+        padding: 0px;
+    }
+    .menu a {
+        display: block;
+        color: black;
+        background-color: #E3E4E8;
+        border-top: 2px solid #f6f6f6;
+        border-bottom: 2px solid #f6f6f6;
+        line-height: 36px;
+        font-size: 18px;
+    }
+    .header-content_panel {
+        text-align: center;
+    }
+    .reviews-block {
+        padding-top: 10px;
+    }
+    .questions-block {
+        margin: 15px 10px;
+    }
+    .reviews-content {
+        padding-top: 25px;
+        padding-bottom: 80px;
+    }
+    .advantages-block, .about-block, .study-block {
+        margin-top: 25px;
+    }
+    .footer-block_communication {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu ul {
+        display: block !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-content_text h2 {
+        font-size: 18px;
+    }
+    .header-content_text h1 {
+        font-size: 23px;
+    }
+    .header-content_button p {
+        font-size: 15px;
+    }
+    .advantages-title, .about-title, .study-title, .questions-title, .reviews-title {
+        padding-left: 80px;
+        font-size: 14px;
+    }
+    .advantages-title::before, .about-title::before, .study-title::before, .questions-title::before, .reviews-title::before {
+        width: 55px;
+    }
+    .header-content_text h3 {
+        font-size: 12px;
+    }
+    
+}
